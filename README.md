@@ -14,6 +14,10 @@ A huge thanks to James Howell and his awesome [College Football Scores](http://h
 
 ### Retrieve the Data
 
+    fab download
+
+### Scrape the Data (only do if download doesn't work)
+
     fab scrape
 
 ### Anaylyze the Data
