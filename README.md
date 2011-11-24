@@ -12,11 +12,7 @@ I posit that this happens more than you would think and is not a rare event. To 
 
 A huge thanks to James Howell and his awesome [College Football Scores](http://homepages.cae.wisc.edu/~dwilson/rfsc/history/howell/) page. This wouldn't have been possible without it.
 
-### Retrieve the Data
-
-    fab download
-
-### Scrape the Data (only do if download doesn't work)
+### Scrape the Data (You don't need to do this)
 
     fab scrape
 
