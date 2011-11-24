@@ -125,7 +125,7 @@ def report():
     for circle in circles:
         if not circle["conference"] in conf_total:
             conf_total[circle["conference"]] = []
-        conf_total[circle["conference"]].append(circle["year"])
+        conf_total[circle["conference"]].append(str(circle["year"]))
 
     year_total = {}
     for circle in circles:
@@ -137,11 +137,11 @@ def report():
     most_conf = max(conf_total.items(), key=lambda x: len(x[1]))
     avg = float(sum([len(x) for x in year_total.values()])) / len(range(1869, 2011))
 
-    print "Total circles    : {} in {} years".format(len(circles),
-                                                     len(range(1869, 2011)))
+    print "Total circles        : {} in {} years".format(
+        len(circles), len(range(1869, 2011)))
     print "Average per year     : {}".format(avg)
     print "First circle         : {}".format(first["year"])
-    print "Most in a conference : {} in the {}".format(
+    print "Most in a conference : {} in the {} in {}".format(
         len(most_conf[1]), most_conf[0], ", ".join(most_conf[1]))
     print "Most in a season     : {} in {} with {}".format(
         len(most_year[1]), most_year[0], ", ".join(most_year[1]))
