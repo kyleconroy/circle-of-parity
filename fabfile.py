@@ -1,5 +1,8 @@
 import requests
+import os
+import json
 import urllib
+import parity
 from fabric.api import task, local
 from lxml.etree import HTML
 
@@ -60,8 +63,27 @@ def scrape():
 
 
 @task
+def transform_teams():
+    files = [path for path in os.listdir("data/teams") if path.endswith("txt")]
+    for conference_file in files:
+        year = int(conference_file.replace("teams_", "").replace(".txt", ""))
+        filename = "teams_{}.json".format(year)
+
+        with open(os.path.join("data/teams", conference_file)) as f:
+            data = parity.parse_conferences(f, year)
+
+        with open(os.path.join("data/teams", filename), "w") as f:
+            json.dump(data, f)
+
+@task
+def transform():
+    transform_teams()
+
+
+@task
 def analyze():
     pass
+
 
 @task
 def report():
