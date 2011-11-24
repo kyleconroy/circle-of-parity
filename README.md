@@ -16,12 +16,24 @@ A huge thanks to James Howell and his awesome [College Football Scores](http://h
 
     fab scrape
 
+This will scrape and download the score data, the conference data, and the logos
+
+### Transform the Data
+
+    fab transform
+
+This will transform the raw txt data into CSV and JSON.
+
 ### Anaylyze the Data
 
     fab anaylyze
 
+This takes in the CSV and JSON files and spits out a circle.json file with all the parity circles in the data 
+
 ### Make it Pretty 
 
     fab report
+
+Print out a nice report of all circles
 
 
