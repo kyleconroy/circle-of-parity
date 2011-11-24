@@ -24,25 +24,31 @@ def parse_scores(score_file):
     scores = []
 
     for line in score_file:
-        try:
-            game, location = line.strip().split("@")
-            city, state = [loc.strip() for loc in location.split(",")]
-        except ValueError:
-            game = line.strip()
-            city = None
-            state = None
+        parts = line.split()
 
-        if not len(game):
+        if not len(parts):
             continue
 
-        date       = game[:11].strip()
-        home_team  = game[11:38].strip()
-        home_score = int(game[39:42].strip())
-        away_team  = game[43:71].strip()
-        away_score = int(game[71:].strip())
+        city = None
+        state = None
+        
+        row = [parts.pop(0)]
+        team = []
+        score_count = 0
 
-        scores.append([date, home_team, home_score, away_team,
-                      away_score, city, state])
+        for part in parts:
+            if score_count > 2:
+                break
+            try:
+                score = int(part)
+                row.append(" ".join(team))
+                row.append(score)
+                score_count += 1
+                team = []
+            except ValueError:
+                team.append(part)
+    
+        scores.append(row)
 
     return scores
 

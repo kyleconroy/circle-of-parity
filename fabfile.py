@@ -1,3 +1,4 @@
+import csv
 import requests
 import os
 import json
@@ -76,8 +77,24 @@ def transform_teams():
             json.dump(data, f)
 
 @task
+def transform_scores():
+    files = [p for p in os.listdir("data/scores") if p.endswith("txt")]
+    for score_file in files:
+        year = int(score_file.replace("scores_", "").replace(".txt", ""))
+        filename = "scores_{}.csv".format(year)
+
+        with open(os.path.join("data/scores", score_file)) as f:
+            data = parity.parse_scores(f)
+
+        writer = csv.writer(open(os.path.join("data/scores", filename), "w"))
+
+        for row in data:
+            writer.writerow(row)
+
+@task
 def transform():
     transform_teams()
+    transform_scores()
 
 
 @task
