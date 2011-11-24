@@ -92,11 +92,12 @@ def analyze():
 
             for winner, loser in pairs(cop):
                 game = lookup[(winner, loser)]
+                scores = [int(game.away_score), int(game.home_score)]
                 circle.append({
                     "winner": winner,
                     "loser": loser,
-                    "winning_score": max(game.away_score, game.home_score),
-                    "losing_score": min(game.away_score, game.home_score),
+                    "winning_score": max(scores),
+                    "losing_score": min(scores),
                     })
 
             cops.append({

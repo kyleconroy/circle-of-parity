@@ -105,6 +105,8 @@ def analyze():
 
 @task
 def report():
+    circles = json.load(open("data/circles.json"))
+
     for circle in json.load(open("data/circles.json")):
         line = "Parity in {} in {}".format(circle["conference"], circle["year"])
 
@@ -115,5 +117,14 @@ def report():
             print "{:30} {:30}: {}-{}".format(game["winner"], game["loser"],
                 game["winning_score"], game["losing_score"])
         print
+
+    def team(circle):
+        return len(circle["teams"])
+
+    longest = max(circles, key=team)
+
+    print "Total number of circles : {}".format(len(circles))
+    print "Largest circle          : {} teams, {} in {}".format(
+        len(longest["teams"]), longest["conference"], longest["year"])
 
 
