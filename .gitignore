@@ -1,4 +1,6 @@
-data
+data/logos
+data/scores/*.txt
+data/teams/*.txt
 
 *.py[co]
 
