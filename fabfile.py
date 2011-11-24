@@ -4,6 +4,7 @@ import os
 import json
 import urllib
 import parity
+from collections import namedtuple
 from fabric.api import task, local
 from lxml.etree import HTML
 
@@ -97,10 +98,99 @@ def transform():
     transform_scores()
 
 
+def find_all_paths(graph, start, end, path=[]):
+        #http://www.python.org/doc/essays/graphs/
+        path = path + [start]
+        if start == end:
+            return [path]
+        if not graph.has_key(start):
+            return []
+        paths = []
+        for node in graph[start]:
+            if node not in path:
+                newpaths = find_all_paths(graph, node, end, path)
+                for newpath in newpaths:
+                    paths.append(newpath)
+        return paths
+
+
+def find_cycle(graph):
+    cycles=[]
+    for startnode in graph:
+        for endnode in graph:
+            newpaths = find_all_paths(graph, startnode, endnode)
+            for path in newpaths:
+                if (len(path)==len(graph)):
+                    if path[0] in graph[path[len(graph)-1]]:
+                        #print path[0], graph[path[len(graph)-1]]
+                        path.append(path[0])
+                        cycles.append(path)
+    return cycles
+
+
 @task
 def analyze():
-    pass
+    Game = namedtuple('Game', 'day home_team home_score away_team away_score')
+    local("mkdir -p data/circles")
 
+    for year in range(1869, 2011):
+        results = {}
+        score_file = "data/scores/scores_{}.csv".format(year)
+        conference_file = "data/teams/teams_{}.json".format(year)
+
+        try:
+            reader = csv.reader(open(score_file))
+        except IOError:
+            continue
+
+        for row in reader:
+            game = Game(*row)
+            if game.home_team not in results:
+                results[game.home_team] = set()
+
+            if game.away_team not in results:
+                results[game.away_team] = set()
+
+            if int(game.home_score) > int(game.away_score):
+                results[game.home_team].add(game.away_team)
+            else:
+                results[game.away_team].add(game.home_team)
+
+        data = json.load(open(conference_file)) 
+
+        for conference in data["conferences"]:
+            print conference["name"]
+            team = len(conference["teams"])
+            print "Plays {} games".format((team * (team - 1)) / 2)
+
+        continue
+
+        
+        for conference in data["conferences"]:
+            graph = {}
+            queue = []
+            seen = set()
+
+            for team in conference["teams"]:
+                if team in results:
+                    graph[team] = results[team]
+
+            a = find_cycle(graph)
+
+            queue.append(graph.keys().pop())
+
+            while len(queue):
+                first = queue.pop() 
+
+                if first not in graph:
+                    continue
+
+                if first not in seen:
+                    seen.add(first)
+                    queue.extend(list(graph[first]))
+                else:
+                    pass
+                    #print "Parity in {} {}?".format(year, conference["name"])
 
 @task
 def report():

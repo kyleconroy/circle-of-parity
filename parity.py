@@ -24,6 +24,7 @@ def parse_scores(score_file):
     scores = []
 
     for line in score_file:
+        line = line.replace("Institute1", "Institute ")
         parts = line.split()
 
         if not len(parts):
