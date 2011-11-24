@@ -1,0 +1,709 @@
+08/23/2001,New Mexico State,24,Louisville,45
+08/25/2001,North Carolina,27,Oklahoma,41
+08/25/2001,Texas Christian,7,Nebraska,21
+08/25/2001,Tulane,35,Brigham Young,70
+08/25/2001,Virginia,17,Wisconsin,26
+08/26/2001,Fresno State,24,Colorado,22
+08/26/2001,Georgia Tech,13,Syracuse,7
+08/30/2001,Arizona,23,San Diego State,10
+08/30/2001,Eastern Kentucky,28,Central Michigan,42
+08/30/2001,Idaho,7,Washington State,36
+08/30/2001,Illinois State,7,Western Michigan,48
+08/30/2001,Indiana State,0,Tulsa,51
+08/30/2001,Middle Tennessee State,37,Vanderbilt,28
+08/30/2001,Minnesota,7,Toledo,38
+08/30/2001,Montana State,13,Alabama-Birmingham,41
+08/30/2001,Navy,26,Temple,45
+08/30/2001,Nevada-Las Vegas,10,Arkansas,14
+08/30/2001,Ohio,29,Akron,31
+08/30/2001,Rutgers,31,Buffalo,15
+08/30/2001,South Florida,17,Northern Illinois,20
+09/01/2001,Arkansas State,17,Georgia,45
+09/01/2001,Ball State,0,Auburn,30
+09/01/2001,Boise State,13,South Carolina,32
+09/01/2001,Bowling Green State,20,Missouri,13
+09/01/2001,Central Florida,13,Clemson,21
+09/01/2001,Citadel,7,Georgia Tech,35
+09/01/2001,Colorado,41,Colorado State,14
+09/01/2001,Connecticut,10,Virginia Tech,52
+09/01/2001,East Tennessee State,0,Pittsburgh,31
+09/01/2001,Florida State,55,Duke,13
+09/01/2001,Furman,14,Wyoming,20
+09/01/2001,Illinois,44,California,17
+09/01/2001,Kent,0,Iowa,51
+09/01/2001,Louisville,36,Kentucky,10
+09/01/2001,Marshall,14,Florida,49
+09/01/2001,McNeese State,24,Texas A&M,38
+09/01/2001,Miami (Florida),33,Penn State,7
+09/01/2001,Miami (Ohio),13,Michigan,31
+09/01/2001,Missouri State,10,Kansas,24
+09/01/2001,Murray State,14,Mississippi,49
+09/01/2001,Nevada,7,Brigham Young,52
+09/01/2001,New Mexico State,7,Texas,41
+09/01/2001,Nicholls State,0,Louisiana-Lafayette,20
+09/01/2001,North Carolina,7,Maryland,23
+09/01/2001,Oklahoma,44,Air Force,3
+09/01/2001,Oklahoma State,9,Southern Mississippi,17
+09/01/2001,Rice,21,Houston,14
+09/01/2001,Richmond,16,Virginia,17
+09/01/2001,Sam Houston State,20,Louisiana-Monroe,9
+09/01/2001,San Jose State,10,Southern California,21
+09/01/2001,Southeast Missouri State,12,Eastern Michigan,16
+09/01/2001,Southern Methodist,6,Louisiana Tech,36
+09/01/2001,Syracuse,9,Tennessee,33
+09/01/2001,Texas Christian,19,North Texas,5
+09/01/2001,Texas-El Paso,6,New Mexico,26
+09/01/2001,Troy,14,Nebraska,42
+09/01/2001,Tulane,17,Louisiana State,48
+09/01/2001,UCLA,20,Alabama,17
+09/01/2001,Utah State,19,Utah,23
+09/01/2001,Wake Forest,21,East Carolina,19
+09/01/2001,West Virginia,10,Boston College,34
+09/01/2001,Wisconsin,28,Oregon,31
+09/02/2001,Oregon State,24,Fresno State,44
+09/02/2001,Purdue,19,Cincinnati,14
+09/03/2001,Memphis,10,Mississippi State,30
+09/06/2001,Indiana,14,North Carolina State,35
+09/06/2001,Texas A&M,28,Wyoming,20
+09/07/2001,Northwestern,37,Nevada-Las Vegas,28
+09/08/2001,Akron,14,Ohio State,28
+09/08/2001,Alabama,12,Vanderbilt,9
+09/08/2001,Alabama-Birmingham,7,Florida State,29
+09/08/2001,Appalachian State,10,Wake Forest,20
+09/08/2001,Arkansas State,3,Baylor,24
+09/08/2001,Ball State,20,Kentucky,28
+09/08/2001,Boston College,22,Stanford,38
+09/08/2001,Brigham Young,44,California,16
+09/08/2001,Bucknell,17,Kent,38
+09/08/2001,Buffalo,0,Bowling Green State,35
+09/08/2001,Central Florida,10,Syracuse,21
+09/08/2001,Central Michigan,21,Michigan State,35
+09/08/2001,Cincinnati,24,Army,21
+09/08/2001,Duke,13,Rice,15
+09/08/2001,East Carolina,51,Tulane,24
+09/08/2001,Eastern Michigan,3,Maryland,50
+09/08/2001,Eastern Washington,35,Connecticut,17
+09/08/2001,Fresno State,32,Wisconsin,20
+09/08/2001,Georgia Tech,70,Navy,7
+09/08/2001,Idaho,29,Arizona,36
+09/08/2001,Kansas State,10,Southern California,6
+09/08/2001,Louisiana Tech,23,Oklahoma State,30
+09/08/2001,Louisiana-Lafayette,14,Minnesota,44
+09/08/2001,Louisiana-Monroe,6,Florida,55
+09/08/2001,Massachusetts,20,Marshall,49
+09/08/2001,Miami (Ohio),19,Iowa,44
+09/08/2001,Michigan,18,Washington,23
+09/08/2001,Mississippi,21,Auburn,27
+09/08/2001,Montana,12,Hawaii,30
+09/08/2001,Nevada,18,Colorado State,35
+09/08/2001,New Mexico,30,Texas Tech,42
+09/08/2001,North Carolina,14,Texas,44
+09/08/2001,North Texas,10,Oklahoma,37
+09/08/2001,Northern Illinois,12,Illinois,17
+09/08/2001,Northern Iowa,0,Iowa State,45
+09/08/2001,Notre Dame,10,Nebraska,27
+09/08/2001,Ohio,3,West Virginia,20
+09/08/2001,Oregon State,27,New Mexico State,22
+09/08/2001,Rutgers,0,Miami (Florida),61
+09/08/2001,San Diego State,7,Arizona State,38
+09/08/2001,San Jose State,15,Colorado,51
+09/08/2001,South Carolina,14,Georgia,9
+09/08/2001,South Florida,35,Pittsburgh,26
+09/08/2001,Tennessee,13,Arkansas,3
+09/08/2001,Tennessee Tech,0,Air Force,42
+09/08/2001,Tennessee-Chattanooga,10,Memphis,43
+09/08/2001,Texas Christian,38,Southern Methodist,10
+09/08/2001,Texas Southern,6,Texas-El Paso,52
+09/08/2001,Texas State,6,Missouri,40
+09/08/2001,Toledo,33,Temple,7
+09/08/2001,Troy,17,Middle Tennessee State,54
+09/08/2001,UCLA,41,Kansas,17
+09/08/2001,Utah,10,Oregon,24
+09/08/2001,Utah State,14,Louisiana State,31
+09/08/2001,Washington State,41,Boise State,20
+09/08/2001,Western Carolina,7,Louisville,31
+09/08/2001,Western Michigan,0,Virginia Tech,31
+09/08/2001,Wofford,14,Clemson,38
+09/20/2001,Rice,3,Nebraska,48
+09/20/2001,South Carolina,16,Mississippi State,14
+09/22/2001,Akron,14,Purdue,33
+09/22/2001,Arizona State,28,Stanford,51
+09/22/2001,Arkansas,10,Alabama,31
+09/22/2001,Army,3,Alabama-Birmingham,55
+09/22/2001,Auburn,14,Syracuse,31
+09/22/2001,Boston College,38,Navy,21
+09/22/2001,Buffalo,37,Connecticut,20
+09/22/2001,California,20,Washington State,51
+09/22/2001,Central Florida,36,Tulane,29
+09/22/2001,Cincinnati,14,Miami (Ohio),21
+09/22/2001,Florida,44,Kentucky,10
+09/22/2001,Florida State,9,North Carolina,41
+09/22/2001,Fresno State,37,Tulsa,18
+09/22/2001,Hawaii,20,Nevada,28
+09/22/2001,Idaho,3,Washington,53
+09/22/2001,Indiana State,21,Eastern Michigan,14
+09/22/2001,Iowa State,31,Ohio,28
+09/22/2001,Jacksonville State,31,Arkansas State,28
+09/22/2001,Kansas,16,Colorado,27
+09/22/2001,Kent,14,West Virginia,34
+09/22/2001,Louisville,10,Illinois,34
+09/22/2001,Maryland,27,Wake Forest,20
+09/22/2001,Michigan State,17,Notre Dame,10
+09/22/2001,Middle Tennessee State,38,Louisiana-Monroe,20
+09/22/2001,Nevada-Las Vegas,21,Arizona,38
+09/22/2001,New Mexico,13,Baylor,16
+09/22/2001,New Mexico State,0,Kansas State,64
+09/22/2001,Nicholls State,0,Troy,26
+09/22/2001,North Carolina State,26,Southern Methodist,17
+09/22/2001,Northern Iowa,42,Ball State,39
+09/22/2001,Northwestern,44,Duke,7
+09/22/2001,Northwestern State,27,Texas Christian,24
+09/22/2001,Ohio State,6,UCLA,13
+09/22/2001,Oklahoma State,7,Texas A&M,21
+09/22/2001,Richmond,22,Vanderbilt,28
+09/22/2001,Sam Houston State,16,Northern Illinois,41
+09/22/2001,San Diego State,14,Colorado State,7
+09/22/2001,South Florida,9,Memphis,17
+09/22/2001,Southern California,22,Oregon,24
+09/22/2001,Southern Mississippi,35,Louisiana-Lafayette,10
+09/22/2001,Temple,23,Bowling Green State,42
+09/22/2001,Texas,53,Houston,26
+09/22/2001,Texas Tech,42,North Texas,14
+09/22/2001,Texas-El Paso,17,Boise State,42
+09/22/2001,Toledo,52,Central Michigan,28
+09/22/2001,Utah,28,Indiana,26
+09/22/2001,Virginia,26,Clemson,24
+09/22/2001,Virginia Tech,50,Rutgers,0
+09/22/2001,Western Michigan,21,Michigan,38
+09/22/2001,William & Mary,23,East Carolina,38
+09/22/2001,Wisconsin,18,Penn State,6
+09/22/2001,Wyoming,43,Utah State,42
+09/27/2001,Miami (Florida),43,Pittsburgh,21
+09/29/2001,Air Force,45,San Diego State,21
+09/29/2001,Alabama,36,South Carolina,37
+09/29/2001,Alabama-Birmingham,0,Southern Mississippi,3
+09/29/2001,Arkansas,23,Georgia,34
+09/29/2001,Army,10,Boston College,31
+09/29/2001,Auburn,24,Vanderbilt,21
+09/29/2001,Baylor,0,Iowa State,41
+09/29/2001,Boise State,45,Idaho,13
+09/29/2001,Bowling Green State,31,Marshall,37
+09/29/2001,Brigham Young,35,Nevada-Las Vegas,31
+09/29/2001,Central Florida,14,Virginia Tech,46
+09/29/2001,Central Michigan,16,Buffalo,8
+09/29/2001,Clemson,47,Georgia Tech,44
+09/29/2001,Colorado State,42,Wyoming,14
+09/29/2001,Connecticut,20,Rutgers,19
+09/29/2001,Duke,10,Virginia,31
+09/29/2001,East Carolina,30,Syracuse,44
+09/29/2001,Illinois,20,Michigan,45
+09/29/2001,Kansas State,37,Oklahoma,38
+09/29/2001,Kent,10,Akron,14
+09/29/2001,Louisiana State,18,Tennessee,26
+09/29/2001,Louisiana Tech,28,Fresno State,38
+09/29/2001,Memphis,21,Louisville,38
+09/29/2001,Miami (Ohio),28,Ball State,20
+09/29/2001,Michigan State,26,Northwestern,27
+09/29/2001,Middle Tennessee State,26,Louisiana-Lafayette,9
+09/29/2001,Mississippi,42,Kentucky,31
+09/29/2001,Mississippi State,0,Florida,52
+09/29/2001,Nebraska,36,Missouri,3
+09/29/2001,New Mexico,16,Utah,37
+09/29/2001,New Mexico State,31,Louisiana-Monroe,0
+09/29/2001,North Carolina,17,North Carolina State,9
+09/29/2001,North Texas,10,South Florida,28
+09/29/2001,Northern Illinois,20,Toledo,41
+09/29/2001,Northwestern State,0,Oklahoma State,24
+09/29/2001,Notre Dame,3,Texas A&M,24
+09/29/2001,Ohio State,27,Indiana,14
+09/29/2001,Oregon,38,Utah State,21
+09/29/2001,Penn State,18,Iowa,24
+09/29/2001,Purdue,35,Minnesota,28
+09/29/2001,Rice,27,Hawaii,24
+09/29/2001,San Jose State,15,Arizona State,53
+09/29/2001,Southern,7,Tulane,41
+09/29/2001,Stanford,21,Southern California,16
+09/29/2001,Texas Christian,34,Houston,17
+09/29/2001,Texas Tech,7,Texas,42
+09/29/2001,Tulsa,10,Texas-El Paso,26
+09/29/2001,UCLA,38,Oregon State,7
+09/29/2001,Wake Forest,24,Florida State,48
+09/29/2001,Washington,31,California,28
+09/29/2001,Washington State,48,Arizona,21
+09/29/2001,West Virginia,20,Maryland,32
+09/29/2001,Western Kentucky,6,Wisconsin,24
+09/29/2001,Western Michigan,31,Eastern Michigan,10
+10/04/2001,Colorado State,2,Louisville,7
+10/05/2001,Utah State,34,Brigham Young,54
+10/06/2001,Air Force,24,Navy,18
+10/06/2001,Akron,14,Western Michigan,31
+10/06/2001,Alabama-Birmingham,7,Central Florida,24
+10/06/2001,Baylor,10,Texas A&M,16
+10/06/2001,Boise State,14,Rice,45
+10/06/2001,Buffalo,14,Miami (Ohio),31
+10/06/2001,Colorado,16,Kansas State,6
+10/06/2001,East Carolina,21,North Carolina,24
+10/06/2001,Eastern Illinois,7,San Diego State,40
+10/06/2001,Eastern Michigan,0,Connecticut,19
+10/06/2001,Florida,44,Louisiana State,15
+10/06/2001,Georgia,26,Tennessee,24
+10/06/2001,Georgia Tech,37,Duke,10
+10/06/2001,Hawaii,38,Southern Methodist,31
+10/06/2001,Houston,14,Army,28
+10/06/2001,Idaho,58,Middle Tennessee State,70
+10/06/2001,Indiana,63,Wisconsin,32
+10/06/2001,Iowa,14,Purdue,23
+10/06/2001,Iowa State,14,Nebraska,48
+10/06/2001,Kansas,34,Texas Tech,31
+10/06/2001,Kent,7,Bowling Green State,24
+10/06/2001,Kentucky,6,South Carolina,42
+10/06/2001,Louisiana-Lafayette,27,Arizona State,63
+10/06/2001,Marshall,37,Northern Illinois,15
+10/06/2001,Michigan,20,Penn State,0
+10/06/2001,Minnesota,14,Illinois,25
+10/06/2001,Mississippi,35,Arkansas State,17
+10/06/2001,Mississippi State,14,Auburn,16
+10/06/2001,Missouri,41,Oklahoma State,38
+10/06/2001,Nevada-Las Vegas,27,Nevada,12
+10/06/2001,New Mexico,30,Wyoming,29
+10/06/2001,New Mexico State,24,Tulsa,7
+10/06/2001,North Carolina State,17,Wake Forest,14
+10/06/2001,North Texas,17,Louisiana-Monroe,19
+10/06/2001,Northwestern,20,Ohio State,38
+10/06/2001,Oklahoma,14,Texas,3
+10/06/2001,Oregon,63,Arizona,28
+10/06/2001,Oregon State,27,Washington State,34
+10/06/2001,Pittsburgh,7,Notre Dame,24
+10/06/2001,San Jose State,20,Louisiana Tech,41
+10/06/2001,South Florida,21,Utah,52
+10/06/2001,Southern California,24,Washington,27
+10/06/2001,Southern Mississippi,17,Memphis,22
+10/06/2001,Syracuse,24,Rutgers,17
+10/06/2001,Temple,10,Boston College,23
+10/06/2001,Texas-El Paso,7,Alabama,56
+10/06/2001,Toledo,48,Ohio,41
+10/06/2001,Troy,7,Miami (Florida),38
+10/06/2001,Tulane,33,Cincinnati,46
+10/06/2001,Virginia,21,Maryland,41
+10/06/2001,Virginia Tech,35,West Virginia,0
+10/06/2001,Weber State,19,Arkansas,42
+10/11/2001,Maryland,20,Georgia Tech,17
+10/13/2001,Akron,27,Miami (Ohio),30
+10/13/2001,Alabama,24,Mississippi,27
+10/13/2001,Arizona,3,Oregon State,38
+10/13/2001,Arizona State,17,Southern California,48
+10/13/2001,Ball State,35,Eastern Michigan,14
+10/13/2001,Boston College,20,Virginia Tech,34
+10/13/2001,Bowling Green State,28,Western Michigan,37
+10/13/2001,Brigham Young,24,New Mexico,20
+10/13/2001,Cincinnati,31,Alabama-Birmingham,17
+10/13/2001,Clemson,45,North Carolina State,37
+10/13/2001,Connecticut,21,South Florida,40
+10/13/2001,East Carolina,49,Army,26
+10/13/2001,Florida,20,Auburn,23
+10/13/2001,Fresno State,25,Colorado State,22
+10/13/2001,Georgia,30,Vanderbilt,14
+10/13/2001,Idaho,39,New Mexico State,46
+10/13/2001,Illinois,35,Indiana,14
+10/13/2001,Iowa,28,Michigan State,31
+10/13/2001,Iowa State,20,Missouri,14
+10/13/2001,Kansas State,19,Texas Tech,38
+10/13/2001,Liberty,0,Central Florida,63
+10/13/2001,Louisiana State,29,Kentucky,25
+10/13/2001,Louisiana Tech,45,Nevada,42
+10/13/2001,Louisiana-Lafayette,20,Arkansas State,26
+10/13/2001,Marshall,34,Buffalo,14
+10/13/2001,Memphis,52,Houston,33
+10/13/2001,Miami (Florida),49,Florida State,27
+10/13/2001,Middle Tennessee State,21,North Texas,24
+10/13/2001,Minnesota,17,Northwestern,23
+10/13/2001,Nebraska,48,Baylor,7
+10/13/2001,Northern Illinois,34,Kent,44
+10/13/2001,Ohio,34,Central Michigan,3
+10/13/2001,Oklahoma,38,Kansas,10
+10/13/2001,Oregon,48,California,7
+10/13/2001,Purdue,10,Michigan,24
+10/13/2001,Rice,21,Navy,13
+10/13/2001,Rutgers,5,Temple,30
+10/13/2001,San Diego State,3,Nevada-Las Vegas,31
+10/13/2001,South Carolina,7,Arkansas,10
+10/13/2001,Southern Methodist,24,San Jose State,17
+10/13/2001,Syracuse,42,Pittsburgh,10
+10/13/2001,Texas,45,Oklahoma State,17
+10/13/2001,Texas A&M,21,Colorado,31
+10/13/2001,Texas Christian,22,Tulane,48
+10/13/2001,Texas-El Paso,7,Hawaii,66
+10/13/2001,Troy,21,Mississippi State,9
+10/13/2001,Tulsa,10,Boise State,41
+10/13/2001,Virginia,24,North Carolina,30
+10/13/2001,Wake Forest,42,Duke,35
+10/13/2001,Washington,13,UCLA,35
+10/13/2001,Washington State,45,Stanford,39
+10/13/2001,West Virginia,24,Notre Dame,34
+10/13/2001,Wisconsin,20,Ohio State,17
+10/13/2001,Wyoming,13,Air Force,24
+10/16/2001,Southern Mississippi,14,Louisville,24
+10/18/2001,Montana State,28,Washington State,53
+10/19/2001,Boise State,35,Fresno State,30
+10/20/2001,Air Force,33,Brigham Young,63
+10/20/2001,Arizona,28,Washington,31
+10/20/2001,Arkansas State,0,North Texas,45
+10/20/2001,Army,20,Texas Christian,38
+10/20/2001,Baylor,17,Oklahoma,33
+10/20/2001,Bowling Green State,16,Akron,11
+10/20/2001,Buffalo,13,Kent,35
+10/20/2001,California,17,UCLA,56
+10/20/2001,Central Michigan,21,Marshall,42
+10/20/2001,Cincinnati,29,Houston,28
+10/20/2001,Colorado,7,Texas,41
+10/20/2001,Colorado State,26,Nevada-Las Vegas,24
+10/20/2001,Duke,17,Maryland,59
+10/20/2001,Florida State,43,Virginia,7
+10/20/2001,Hawaii,36,Tulsa,15
+10/20/2001,Idaho State,27,Utah State,28
+10/20/2001,Indiana,28,Iowa,42
+10/20/2001,Kentucky,29,Georgia,43
+10/20/2001,Louisiana State,42,Mississippi State,0
+10/20/2001,Louisiana Tech,41,Auburn,48
+10/20/2001,Louisiana-Lafayette,54,Idaho,37
+10/20/2001,Louisiana-Monroe,6,Central Florida,38
+10/20/2001,Memphis,11,East Carolina,32
+10/20/2001,Miami (Ohio),36,Ohio,24
+10/20/2001,Michigan State,19,Minnesota,28
+10/20/2001,Middle Tennessee State,17,Mississippi,45
+10/20/2001,Missouri,38,Kansas,34
+10/20/2001,Navy,17,Rutgers,23
+10/20/2001,Nevada,30,Rice,33
+10/20/2001,North Carolina,38,Clemson,3
+10/20/2001,North Carolina State,17,Georgia Tech,27
+10/20/2001,Northridge State,31,Troy,44
+10/20/2001,Oklahoma State,14,Iowa State,28
+10/20/2001,Oregon State,24,Arizona State,41
+10/20/2001,Penn State,38,Northwestern,35
+10/20/2001,Pittsburgh,7,Boston College,45
+10/20/2001,San Diego State,12,Ohio State,27
+10/20/2001,San Jose State,40,Texas-El Paso,28
+10/20/2001,Southern California,16,Notre Dame,27
+10/20/2001,Southern Utah,12,South Florida,42
+10/20/2001,Stanford,49,Oregon,42
+10/20/2001,Temple,3,Syracuse,45
+10/20/2001,Tennessee,35,Alabama,24
+10/20/2001,Texas A&M,31,Kansas State,24
+10/20/2001,Texas Tech,31,Nebraska,41
+10/20/2001,Toledo,20,Ball State,24
+10/20/2001,Tulane,27,Alabama-Birmingham,34
+10/20/2001,Vanderbilt,14,South Carolina,46
+10/20/2001,Western Michigan,12,Northern Illinois,20
+10/20/2001,Wisconsin,35,Illinois,42
+10/20/2001,Wyoming,0,Utah,35
+10/25/2001,West Virginia,3,Miami (Florida),45
+10/26/2001,Fresno State,34,Hawaii,38
+10/27/2001,Air Force,33,New Mexico,52
+10/27/2001,Akron,33,Marshall,50
+10/27/2001,Alabama-Birmingham,17,Memphis,14
+10/27/2001,Auburn,17,Arkansas,42
+10/27/2001,Ball State,10,Connecticut,5
+10/27/2001,Brigham Young,59,San Diego State,21
+10/27/2001,Buffalo,20,Eastern Michigan,24
+10/27/2001,California,10,Oregon State,19
+10/27/2001,Central Florida,27,Utah State,30
+10/27/2001,Clemson,21,Wake Forest,14
+10/27/2001,Colorado,22,Oklahoma State,19
+10/27/2001,Florida,24,Georgia,10
+10/27/2001,Houston,14,Southern Mississippi,58
+10/27/2001,Idaho,31,Arkansas State,34
+10/27/2001,Iowa State,21,Texas A&M,24
+10/27/2001,Kansas,6,Kansas State,40
+10/27/2001,Kent,24,Ohio,14
+10/27/2001,Liberty,37,South Florida,68
+10/27/2001,Louisiana-Monroe,12,Louisiana-Lafayette,17
+10/27/2001,Louisville,28,Cincinnati,13
+10/27/2001,Maryland,31,Florida State,52
+10/27/2001,Michigan,32,Iowa,26
+10/27/2001,Michigan State,42,Wisconsin,28
+10/27/2001,Mississippi,35,Louisiana State,24
+10/27/2001,Murray State,10,Minnesota,66
+10/27/2001,Navy,20,Toledo,21
+10/27/2001,Nevada,7,Boise State,49
+10/27/2001,Nevada-Las Vegas,47,Wyoming,26
+10/27/2001,New Mexico State,35,Middle Tennessee State,39
+10/27/2001,Northern Illinois,33,Central Michigan,24
+10/27/2001,Northwestern,27,Purdue,32
+10/27/2001,Notre Dame,17,Boston College,21
+10/27/2001,Ohio State,27,Penn State,29
+10/27/2001,Oklahoma,10,Nebraska,20
+10/27/2001,Oregon,24,Washington State,17
+10/27/2001,Pittsburgh,33,Temple,7
+10/27/2001,Rice,38,Louisiana Tech,41
+10/27/2001,South Carolina,10,Tennessee,17
+10/27/2001,Southern California,41,Arizona,34
+10/27/2001,Southern Utah,17,Troy,20
+10/27/2001,Syracuse,22,Virginia Tech,14
+10/27/2001,Texas,35,Missouri,16
+10/27/2001,Texas Tech,63,Baylor,19
+10/27/2001,Texas-El Paso,14,Southern Methodist,40
+10/27/2001,Tulane,35,Army,42
+10/27/2001,Tulsa,27,San Jose State,63
+10/27/2001,UCLA,28,Stanford,38
+10/27/2001,Utah,17,Colorado State,19
+10/27/2001,Vanderbilt,42,Duke,28
+10/27/2001,Virginia,0,North Carolina State,24
+10/27/2001,Washington,33,Arizona State,31
+10/27/2001,Western Michigan,11,Miami (Ohio),25
+10/30/2001,East Carolina,37,Texas Christian,30
+11/01/2001,Colorado State,34,Brigham Young,56
+11/01/2001,North Carolina,21,Georgia Tech,28
+11/03/2001,Akron,17,Central Florida,57
+11/03/2001,Arizona,38,California,24
+11/03/2001,Arizona State,24,Oregon,42
+11/03/2001,Arkansas,58,Mississippi,56
+11/03/2001,Arkansas State,6,Middle Tennessee State,54
+11/03/2001,Army,24,Air Force,34
+11/03/2001,Boise State,42,Louisiana Tech,48
+11/03/2001,Central Michigan,34,Ball State,38
+11/03/2001,Connecticut,28,Cincinnati,45
+11/03/2001,Eastern Michigan,17,Northern Illinois,40
+11/03/2001,Florida State,41,Clemson,27
+11/03/2001,Houston,6,South Florida,45
+11/03/2001,Illinois,38,Purdue,13
+11/03/2001,Iowa,28,Wisconsin,34
+11/03/2001,Kansas State,42,Iowa State,3
+11/03/2001,Kentucky,14,Mississippi State,17
+11/03/2001,Louisiana State,35,Alabama,21
+11/03/2001,Louisiana-Monroe,38,Idaho,42
+11/03/2001,Louisville,52,Tulane,7
+11/03/2001,Marshall,42,Kent,21
+11/03/2001,Miami (Ohio),24,Bowling Green State,21
+11/03/2001,Michigan,24,Michigan State,26
+11/03/2001,Missouri,24,Colorado,38
+11/03/2001,Nebraska,51,Kansas,7
+11/03/2001,New Mexico,20,San Diego State,15
+11/03/2001,North Carolina State,55,Duke,31
+11/03/2001,North Texas,22,New Mexico State,20
+11/03/2001,Northwestern,21,Indiana,56
+11/03/2001,Ohio,0,Buffalo,44
+11/03/2001,Ohio State,31,Minnesota,28
+11/03/2001,Oregon State,13,Southern California,16
+11/03/2001,Rice,24,Fresno State,52
+11/03/2001,Rutgers,7,West Virginia,80
+11/03/2001,San Jose State,10,Hawaii,34
+11/03/2001,Southern Methodist,14,Nevada,35
+11/03/2001,Southern Mississippi,20,Penn State,38
+11/03/2001,Stanford,28,Washington,42
+11/03/2001,Temple,0,Miami (Florida),38
+11/03/2001,Tennessee,28,Notre Dame,18
+11/03/2001,Texas,49,Baylor,10
+11/03/2001,Texas A&M,0,Texas Tech,12
+11/03/2001,Troy,14,Maryland,47
+11/03/2001,Tulsa,0,Oklahoma,58
+11/03/2001,UCLA,14,Washington State,20
+11/03/2001,Utah,42,Nevada-Las Vegas,14
+11/03/2001,Vanderbilt,13,Florida,71
+11/03/2001,Virginia Tech,7,Pittsburgh,38
+11/03/2001,Wake Forest,34,Virginia,30
+11/03/2001,Wofford,14,South Carolina,38
+11/06/2001,Western Michigan,35,Toledo,41
+11/08/2001,Air Force,21,Colorado State,28
+11/10/2001,Arkansas State,17,New Mexico State,28
+11/10/2001,Auburn,24,Georgia,17
+11/10/2001,Baylor,24,Missouri,41
+11/10/2001,Boise State,28,Hawaii,21
+11/10/2001,Bowling Green State,17,Ohio,0
+11/10/2001,Brigham Young,41,Wyoming,34
+11/10/2001,Buffalo,26,Army,19
+11/10/2001,Central Florida,20,Arkansas,27
+11/10/2001,Clemson,20,Maryland,37
+11/10/2001,Colorado,40,Iowa State,27
+11/10/2001,East Carolina,28,Cincinnati,26
+11/10/2001,Eastern Michigan,30,Central Michigan,35
+11/10/2001,Florida,54,South Carolina,17
+11/10/2001,Fresno State,38,Southern Methodist,13
+11/10/2001,Georgia Tech,38,Virginia,39
+11/10/2001,Houston,10,Louisville,34
+11/10/2001,Indiana,37,Michigan State,28
+11/10/2001,Iowa,59,Northwestern,16
+11/10/2001,Kansas,0,Texas,59
+11/10/2001,Kansas State,21,Nebraska,31
+11/10/2001,Kent,31,Ball State,18
+11/10/2001,Kentucky,56,Vanderbilt,30
+11/10/2001,Louisiana Tech,53,Texas-El Paso,30
+11/10/2001,Louisiana-Lafayette,17,North Texas,42
+11/10/2001,Marshall,27,Miami (Ohio),21
+11/10/2001,Memphis,28,Tennessee,49
+11/10/2001,Miami (Florida),18,Boston College,7
+11/10/2001,Middle Tennessee State,14,Louisiana State,30
+11/10/2001,Minnesota,10,Michigan,31
+11/10/2001,Mississippi State,17,Alabama,24
+11/10/2001,Nevada,45,San Jose State,64
+11/10/2001,Nevada-Las Vegas,17,New Mexico,27
+11/10/2001,North Carolina State,34,Florida State,28
+11/10/2001,Oregon,21,UCLA,20
+11/10/2001,Penn State,28,Illinois,33
+11/10/2001,Pittsburgh,42,Rutgers,0
+11/10/2001,Purdue,9,Ohio State,35
+11/10/2001,San Diego State,3,Utah,17
+11/10/2001,Southern California,55,California,14
+11/10/2001,Stanford,51,Arizona,37
+11/10/2001,Texas A&M,10,Oklahoma,31
+11/10/2001,Texas Christian,17,Alabama-Birmingham,38
+11/10/2001,Texas Tech,49,Oklahoma State,30
+11/10/2001,Troy,44,Louisiana-Monroe,12
+11/10/2001,Tulane,42,Navy,28
+11/10/2001,Tulsa,32,Rice,59
+11/10/2001,Utah State,38,Connecticut,31
+11/10/2001,Virginia Tech,35,Temple,0
+11/10/2001,Wake Forest,32,North Carolina,31
+11/10/2001,Washington,24,Oregon State,49
+11/10/2001,Washington State,28,Arizona State,16
+11/10/2001,West Virginia,13,Syracuse,24
+11/10/2001,Western Illinois,17,South Florida,48
+11/15/2001,Louisville,39,East Carolina,34
+11/17/2001,Akron,41,Buffalo,14
+11/17/2001,Alabama,31,Auburn,7
+11/17/2001,Alabama-Birmingham,43,Houston,21
+11/17/2001,Army,10,Memphis,42
+11/17/2001,Ball State,29,Northern Illinois,33
+11/17/2001,Boston College,38,Rutgers,7
+11/17/2001,Bowling Green State,43,Northwestern,42
+11/17/2001,California,28,Stanford,35
+11/17/2001,Central Michigan,17,Western Michigan,20
+11/17/2001,Clemson,15,South Carolina,20
+11/17/2001,Colorado State,24,New Mexico,17
+11/17/2001,Connecticut,14,Middle Tennessee State,38
+11/17/2001,Duke,17,North Carolina,52
+11/17/2001,Eastern Michigan,7,Toledo,28
+11/17/2001,Florida State,13,Florida,37
+11/17/2001,Fresno State,61,Nevada,14
+11/17/2001,Georgia,35,Mississippi,15
+11/17/2001,Georgia Tech,38,Wake Forest,33
+11/17/2001,Illinois,34,Ohio State,22
+11/17/2001,Indiana,14,Penn State,28
+11/17/2001,Iowa State,49,Kansas,7
+11/17/2001,Jacksonville State,3,Troy,21
+11/17/2001,Louisiana Tech,7,Kansas State,40
+11/17/2001,Louisiana-Monroe,16,Arkansas State,7
+11/17/2001,Maryland,23,North Carolina State,19
+11/17/2001,Miami (Ohio),51,Hawaii,52
+11/17/2001,Michigan,20,Wisconsin,17
+11/17/2001,Michigan State,14,Purdue,24
+11/17/2001,Minnesota,24,Iowa,42
+11/17/2001,Mississippi State,21,Arkansas,24
+11/17/2001,Navy,16,Notre Dame,34
+11/17/2001,Nevada-Las Vegas,34,Air Force,10
+11/17/2001,New Mexico State,49,Louisiana-Lafayette,46
+11/17/2001,North Texas,50,Idaho,27
+11/17/2001,Northern Arizona,10,Oregon State,45
+11/17/2001,Ohio,18,Marshall,42
+11/17/2001,Oklahoma,30,Texas Tech,13
+11/17/2001,Oklahoma State,38,Baylor,22
+11/17/2001,San Jose State,6,Boise State,56
+11/17/2001,Southern Methodist,24,Tulsa,14
+11/17/2001,Syracuse,0,Miami (Florida),59
+11/17/2001,Temple,17,West Virginia,14
+11/17/2001,Tennessee,38,Kentucky,35
+11/17/2001,Texas-El Paso,17,Rice,27
+11/17/2001,Tulane,6,Southern Mississippi,59
+11/17/2001,UCLA,0,Southern California,27
+11/17/2001,Utah,21,Brigham Young,24
+11/17/2001,Virginia Tech,31,Virginia,17
+11/17/2001,Washington State,14,Washington,26
+11/17/2001,Weber State,43,Utah State,56
+11/17/2001,Wyoming,16,San Diego State,38
+11/22/2001,Mississippi,28,Mississippi State,36
+11/22/2001,Nicholls State,28,Arkansas State,22
+11/22/2001,Northwestern,28,Illinois,34
+11/23/2001,Arizona,34,Arizona State,21
+11/23/2001,Arkansas,38,Louisiana State,41
+11/23/2001,California,20,Rutgers,10
+11/23/2001,Louisville,22,Texas Christian,37
+11/23/2001,Nebraska,36,Colorado,62
+11/23/2001,San Jose State,21,Fresno State,40
+11/23/2001,Southern Mississippi,28,East Carolina,21
+11/23/2001,Texas,21,Texas A&M,7
+11/23/2001,Toledo,21,Bowling Green State,56
+11/24/2001,Air Force,30,Hawaii,52
+11/24/2001,Ball State,35,Western Michigan,31
+11/24/2001,Boston College,28,Syracuse,39
+11/24/2001,Central Michigan,10,Boise State,26
+11/24/2001,Cincinnati,36,Memphis,34
+11/24/2001,Connecticut,7,Temple,56
+11/24/2001,Eastern Michigan,62,Akron,65
+11/24/2001,Georgia,31,Georgia Tech,17
+11/24/2001,Idaho,27,Montana,33
+11/24/2001,Iowa,14,Iowa State,17
+11/24/2001,Louisiana Tech,19,Tulsa,7
+11/24/2001,Louisiana-Lafayette,0,Central Florida,31
+11/24/2001,Miami (Ohio),20,Kent,24
+11/24/2001,Missouri,3,Kansas State,24
+11/24/2001,Nevada,48,Texas-El Paso,31
+11/24/2001,New Mexico State,0,New Mexico,53
+11/24/2001,Northern Illinois,35,Wake Forest,38
+11/24/2001,Notre Dame,13,Stanford,17
+11/24/2001,Ohio,7,North Carolina State,27
+11/24/2001,Ohio State,26,Michigan,20
+11/24/2001,Oklahoma State,16,Oklahoma,13
+11/24/2001,Penn State,42,Michigan State,37
+11/24/2001,Pittsburgh,23,West Virginia,17
+11/24/2001,Purdue,7,Indiana,13
+11/24/2001,Rice,20,Southern Methodist,37
+11/24/2001,Southern Illinois,12,Baylor,56
+11/24/2001,Stephen F. Austin,3,Texas Tech,58
+11/24/2001,Utah State,13,South Florida,34
+11/24/2001,Vanderbilt,0,Tennessee,38
+11/24/2001,Washington,7,Miami (Florida),65
+11/24/2001,Wisconsin,31,Minnesota,42
+11/24/2001,Wyoming,14,Kansas,27
+11/24/2001,Youngstown State,24,Marshall,38
+11/29/2001,Southern Mississippi,15,Alabama,28
+11/30/2001,Marshall,36,Toledo,41
+12/01/2001,Alabama-Birmingham,6,Pittsburgh,24
+12/01/2001,Arizona State,42,UCLA,52
+12/01/2001,Army,26,Navy,17
+12/01/2001,Auburn,14,Louisiana State,27
+12/01/2001,Brigham Young,41,Mississippi State,38
+12/01/2001,Colorado,39,Texas,37
+12/01/2001,Duke,31,Clemson,59
+12/01/2001,Georgia Tech,17,Florida State,28
+12/01/2001,Houston,7,Georgia,35
+12/01/2001,Kentucky,15,Indiana,26
+12/01/2001,Louisiana-Monroe,10,Cincinnati,42
+12/01/2001,Miami (Florida),26,Virginia Tech,24
+12/01/2001,Missouri,7,Michigan State,55
+12/01/2001,North Texas,16,Troy,18
+12/01/2001,Notre Dame,24,Purdue,18
+12/01/2001,Oregon State,14,Oregon,17
+12/01/2001,Penn State,14,Virginia,20
+12/01/2001,Southern Methodist,10,North Carolina,19
+12/01/2001,Stanford,41,San Jose State,14
+12/01/2001,Tennessee,34,Florida,32
+12/01/2001,Utah,37,Air Force,38
+12/01/2001,Utah State,21,Fresno State,70
+12/01/2001,Vanderbilt,27,Mississippi,38
+12/07/2001,Texas Christian,14,Southern Mississippi,12
+12/08/2001,Brigham Young,45,Hawaii,72
+12/08/2001,Louisiana State,31,Tennessee,20
+12/18/2001,Colorado State,45,North Texas,20
+12/19/2001,East Carolina,61,Marshall,64
+12/20/2001,North Carolina State,19,Pittsburgh,34
+12/25/2001,Southern California,6,Utah,10
+12/27/2001,Alabama,14,Iowa State,13
+12/27/2001,Georgia Tech,24,Stanford,14
+12/28/2001,Boston College,20,Georgia,16
+12/28/2001,Texas,47,Washington,43
+12/28/2001,Texas A&M,28,Texas Christian,9
+12/29/2001,Cincinnati,16,Toledo,23
+12/29/2001,Iowa,19,Texas Tech,16
+12/29/2001,Kansas State,3,Syracuse,26
+12/31/2001,Auburn,10,North Carolina,16
+12/31/2001,Brigham Young,10,Louisville,28
+12/31/2001,Clemson,49,Louisiana Tech,24
+12/31/2001,Fresno State,35,Michigan State,44
+12/31/2001,Purdue,27,Washington State,33
+01/01/2002,Arkansas,3,Oklahoma,10
+01/01/2002,Colorado,16,Oregon,38
+01/01/2002,Florida State,30,Virginia Tech,17
+01/01/2002,Illinois,34,Louisiana State,47
+01/01/2002,Michigan,17,Tennessee,45
+01/01/2002,Ohio State,28,South Carolina,31
+01/02/2002,Florida,56,Maryland,23
+01/03/2002,Miami (Florida),37,Nebraska,14
