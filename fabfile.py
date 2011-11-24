@@ -118,13 +118,26 @@ def report():
                 game["winning_score"], game["losing_score"])
         print
 
-    def team(circle):
-        return len(circle["teams"])
+    longest = max(circles, key=lambda circle: len(circle["teams"]))
+    first = min(circles, key=lambda circle: circle["year"])
 
-    longest = max(circles, key=team)
+    year_total = {}
+    for circle in circles:
+        if not circle["year"] in year_total:
+            year_total[circle["year"]] = []
 
-    print "Total number of circles : {}".format(len(circles))
-    print "Largest circle          : {} teams, {} in {}".format(
+        year_total[circle["year"]].append(circle["conference"])
+
+    most_year = max(year_total.items(), key=lambda x: len(x[1]))
+    avg = float(sum([len(x) for x in year_total.values()])) / len(range(1869, 2011))
+
+    print "Total circles    : {} in {} years".format(len(circles),
+                                                     len(range(1869, 2011)))
+    print "Average per year : {}".format(avg)
+    print "First circle     : {}".format(first["year"])
+    print "Most in a season : {} in {} with {}".format(
+        len(most_year[1]), most_year[0], ", ".join(most_year[1]))
+    print "Largest circle   : {} teams, {} in {}".format(
         len(longest["teams"]), longest["conference"], longest["year"])
 
 
