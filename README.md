@@ -41,7 +41,5 @@ Print out a nice report of all circles
     First circle         : 1869
     Most in a season     : 6 in 2006 with Big 12, Big East, CUSA, MAC, Pac 10, SEC
     Largest circle       : 16 teams, WAC in 1997
-    Most in a conference : 16 in the Big Ten in 1959, 1962, 1963, 1964, 1972,
-                           1976, 1982, 1985, 1986, 1996, 2000, 2001, 2004, 
-                           2008, 2009, 2010
+    Most in a conference : 16 in the Big Ten in 1959, 1962, 1963, 1964, 1972, 1976, 1982, 1985, 1986, 1996, 2000, 2001, 2004, 2008, 2009, 2010
         
