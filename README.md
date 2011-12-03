@@ -24,9 +24,9 @@ This will scrape and download the score data, the conference data, and the logos
 
 This will transform the raw txt data into CSV and JSON.
 
-### Anaylyze the Data
+### Analyze the Data
 
-    fab anaylyze
+    fab analyze
 
 This takes in the CSV and JSON files and spits out a circle.json file with all the parity circles in the data 
 
