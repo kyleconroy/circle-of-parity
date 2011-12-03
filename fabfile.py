@@ -61,7 +61,7 @@ def scrape_logos():
 
 @task
 def scrape():
-    scarpe_games()
+    scrape_games()
     scrape_logos()
 
 
