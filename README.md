@@ -47,8 +47,9 @@ Print out a nice report of all circles
 
     fab circles_to_html
 
-Create an HTML page for each circle of parity. You can access via any browser by opening 
+Create an HTML page for each circle of parity. You can access each parity circle via any browser by opening 
     data/circles_html/circles*num*.html 
-where *num* ranges from 0-134 (number of circles of parity we found so far). 
+where *num* ranges from 0-134 (number of circles of parity we found so far).
+You can also just open data/circles_html/index.html for a full list of parity circles. 
 Thanks to Addy Osmani for his great jQuery plugin roundrr (http://addyosmani.com/blog/jquery-roundrr/). 
 Also uses Jinja2 for templating in the HTML page creation. 
