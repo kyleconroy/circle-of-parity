@@ -73,6 +73,8 @@ def circles_to_html():
     #Environment is for working with the template. 
     env = Environment(loader=FileSystemLoader('data/circle_html/'))
     num = 0
+    links = []
+    all_parities = []
     for circle in circles:
 
         info_line = "Parity in {0} in {1}".format(circle["conference"], circle["year"])
@@ -102,9 +104,15 @@ def circles_to_html():
         template = env.get_template('templates/circle_template.html')
         f = open('data/circle_html/circles{0}.html'.format(num), 'w')
         f.writelines(template.render(team_info = zip(imgs, team_names, game_info), parity_info = info_line))
+        f.close()
+        links.append('circles{0}.html'.format(num))
+        all_parities.append(info_line)
         num += 1
 
-
+    template = env.get_template('templates/index.html')
+    f = open('data/circle_html/index.html', 'w')
+    f.writelines(template.render(parities = zip(links, all_parities)))
+    f.close()
             
 
 
