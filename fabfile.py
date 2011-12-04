@@ -74,6 +74,9 @@ def circles_to_html():
     env = Environment(loader=FileSystemLoader('data/circle_html/'))
     num = 0
     for circle in circles:
+
+        info_line = "Parity in {0} in {1}".format(circle["conference"], circle["year"])
+
         imgs = []
         team_names = []
         game_info = []
@@ -94,9 +97,11 @@ def circles_to_html():
             team_names.append(game["winner"])
             game_info.append("Beat {0}, Score: {1} - {2}".format(game["loser"], game["winning_score"], game["losing_score"]))
         
+        #Write HTML page using the template. 
+        #Would like this to eventually be served up in a webapp
         template = env.get_template('templates/circle_template.html')
         f = open('data/circle_html/circles{0}.html'.format(num), 'w')
-        f.writelines(template.render(team_info = zip(imgs, team_names, game_info)))
+        f.writelines(template.render(team_info = zip(imgs, team_names, game_info), parity_info = info_line))
         num += 1
 
 

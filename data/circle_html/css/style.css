@@ -13,6 +13,13 @@ a {
 	color: white
 }
 
+#circle_info {
+    color: white;
+    font-size: 20x;
+    font-family: Arial;
+
+}
+
 #next {
 	border-width: 0px;
 	background-image: url(../images/btn2.png);
