@@ -48,8 +48,8 @@ def analyze():
     for year in range(1869, 2011):
         results = {}
         lookup = {}
-        score_file = "data/scores/scores_{}.csv".format(year)
-        conference_file = "data/teams/teams_{}.json".format(year)
+        score_file = "data/scores/scores_{0}.csv".format(year)
+        conference_file = "data/teams/teams_{0}.json".format(year)
 
         try:
             reader = csv.reader(open(score_file))

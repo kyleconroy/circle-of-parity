@@ -1,6 +1,7 @@
 data/logos
 data/scores/*.txt
 data/teams/*.txt
+data/circle_html/*.html
 
 *.py[co]
 

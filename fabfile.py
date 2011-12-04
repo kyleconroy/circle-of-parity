@@ -1,3 +1,4 @@
+#!/usr/local/bin/python3
 import analyze as analyze_games
 import csv
 import requests
@@ -8,7 +9,7 @@ import parity
 from collections import namedtuple
 from fabric.api import task, local
 from lxml.etree import HTML
-
+from jinja2 import Template, Environment, FileSystemLoader
 
 @task
 def download():
@@ -19,7 +20,7 @@ def download():
 def scrape_games():
 
     def scrape_game_info(url, folder):
-        local("mkdir -p data/{}".format(folder))
+        local("mkdir -p data/{0}".format(folder))
         urls = [url.format(year) for year in xrange(1869, 2011)]
         results = [requests.get(u) for u in urls]
         for year, resp in enumerate(results, start=1869):
@@ -27,7 +28,7 @@ def scrape_games():
                 with open("data/{0}/{0}_{1}.txt".format(folder, year), "w") as f:
                     f.write(resp.content)
             else:
-                print "Error retrieving {}".format(resp.url)
+                print "Error retrieving {0}".format(resp.url)
 
     base_uri = "http://homepages.cae.wisc.edu/~dwilson/rfsc/history/howell/"
     scrape_game_info(base_uri + "cf{}tms.txt", "teams")
@@ -38,12 +39,12 @@ def scrape_games():
 def scrape_logos():
     local("mkdir -p data/logos")
 
-    base_uri = "http://www.sportslogos.net/league.php?id={}"
+    base_uri = "http://www.sportslogos.net/league.php?id={0}"
     for url in [base_uri.format(page_id) for page_id in xrange(30, 36)]:
         resp = requests.get(url)
 
         if not resp.ok:
-            print "Error retrieving {}".format(url)
+            print "Error retrieving {0}".format(url)
             continue
 
         tree = HTML(resp.content)
@@ -54,7 +55,7 @@ def scrape_logos():
 
             title = link.attrib["title"].lower().replace("Logos", "")
             title = title.replace(" ", "_").strip()
-            filename = "data/logos/{}.gif".format(title)
+            filename = "data/logos/{0}.gif".format(title)
 
             urllib.urlretrieve(logo.attrib["src"], filename)
 
@@ -66,11 +67,61 @@ def scrape():
 
 
 @task
+def circles_to_html():
+    local("mkdir -p data/circle_html")
+    circles = json.load(open("data/circles.json"))
+    #Environment is for working with the template. 
+    env = Environment(loader=FileSystemLoader('data/circle_html/'))
+    num = 0
+    links = []
+    all_parities = []
+    for circle in circles:
+
+        info_line = "Parity in {0} in {1}".format(circle["conference"], circle["year"])
+
+        imgs = []
+        team_names = []
+        game_info = []
+        for game in circle["teams"]:
+            
+            logo_path = local("find data/logos -name '*{0}*'".format('_'.join(game["winner"].lower().split(' '))), capture = True)
+            
+            #The find might return multiple matches. This is bad. 
+            #Fixed by terrible and incorrect hack. May Linus forgive me. 
+            if len(logo_path.split('\n')) > 1:
+                logo_path = logo_path.split('\n')[0]
+
+            #Might actually not have logo, safety check
+            elif logo_path == '':
+                logo_path = 'data/circle_html/images/img_not_found.jpg'
+
+            imgs.append(logo_path)
+            team_names.append(game["winner"])
+            game_info.append("Beat {0}, Score: {1} - {2}".format(game["loser"], game["winning_score"], game["losing_score"]))
+        
+        #Write HTML page using the template. 
+        #Would like this to eventually be served up in a webapp
+        template = env.get_template('templates/circle_template.html')
+        f = open('data/circle_html/circles{0}.html'.format(num), 'w')
+        f.writelines(template.render(team_info = zip(imgs, team_names, game_info), parity_info = info_line))
+        f.close()
+        links.append('circles{0}.html'.format(num))
+        all_parities.append(info_line)
+        num += 1
+
+    template = env.get_template('templates/index.html')
+    f = open('data/circle_html/index.html', 'w')
+    f.writelines(template.render(parities = zip(links, all_parities)))
+    f.close()
+            
+
+
+@task
 def transform_teams():
     files = [path for path in os.listdir("data/teams") if path.endswith("txt")]
     for conference_file in files:
         year = int(conference_file.replace("teams_", "").replace(".txt", ""))
-        filename = "teams_{}.json".format(year)
+        filename = "teams_{0}.json".format(year)
 
         with open(os.path.join("data/teams", conference_file)) as f:
             data = parity.parse_conferences(f, year)
@@ -83,7 +134,7 @@ def transform_scores():
     files = [p for p in os.listdir("data/scores") if p.endswith("txt")]
     for score_file in files:
         year = int(score_file.replace("scores_", "").replace(".txt", ""))
-        filename = "scores_{}.csv".format(year)
+        filename = "scores_{0}.csv".format(year)
 
         with open(os.path.join("data/scores", score_file)) as f:
             data = parity.parse_scores(f)
@@ -107,14 +158,14 @@ def analyze():
 def report():
     circles = json.load(open("data/circles.json"))
 
-    for circle in json.load(open("data/circles.json")):
-        line = "Parity in {} in {}".format(circle["conference"], circle["year"])
+    for circle in circles:
+        line = "Parity in {0} in {1}".format(circle["conference"], circle["year"])
 
         print line
         print "".join(["="] * len(line))
 
         for game in circle["teams"]:
-            print "{:30} {:30}: {}-{}".format(game["winner"], game["loser"],
+            print "{0} vs {1}: {2}-{3}".format(game["winner"], game["loser"],
                 game["winning_score"], game["losing_score"])
         print
 
@@ -137,15 +188,15 @@ def report():
     most_conf = max(conf_total.items(), key=lambda x: len(x[1]))
     avg = float(sum([len(x) for x in year_total.values()])) / len(range(1869, 2011))
 
-    print "Total circles        : {} in {} years".format(
+    print "Total circles        : {0} in {1} years".format(
         len(circles), len(range(1869, 2011)))
-    print "Average per year     : {}".format(avg)
-    print "First circle         : {}".format(first["year"])
-    print "Most in a conference : {} in the {} in {}".format(
+    print "Average per year     : {0}".format(avg)
+    print "First circle         : {0}".format(first["year"])
+    print "Most in a conference : {0} in the {1} in {2}".format(
         len(most_conf[1]), most_conf[0], ", ".join(most_conf[1]))
-    print "Most in a season     : {} in {} with {}".format(
+    print "Most in a season     : {0} in {1} with {2}".format(
         len(most_year[1]), most_year[0], ", ".join(most_year[1]))
-    print "Largest circle       : {} teams, {} in {}".format(
+    print "Largest circle       : {0} teams, {1} in {2}".format(
         len(longest["teams"]), longest["conference"], longest["year"])
 
 
