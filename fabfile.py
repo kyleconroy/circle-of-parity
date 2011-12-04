@@ -9,7 +9,7 @@ import parity
 from collections import namedtuple
 from fabric.api import task, local
 from lxml.etree import HTML
-
+from jinja2 import Template, Environment, FileSystemLoader
 
 @task
 def download():
@@ -64,6 +64,27 @@ def scrape_logos():
 def scrape():
     scrape_games()
     scrape_logos()
+
+
+@task
+def circles_to_html():
+    local("mkdir -p data/circle_html")
+    circles = json.load(open("data/circles.json"))
+    
+    env = Environment(loader=FileSystemLoader('data/circle_html/'))
+    num = 0
+    for circle in circles:
+
+        imgs = []
+        for game in circle["teams"]:
+            imgs.append(local("find data/logos -name '*{0}*'".format(game["winner"].lower()), capture = True))    
+        template = env.get_template('circle_template.html')
+        f = open('data/circle_html/circles{0}.html'.format(num), 'w')
+        f.writelines(template.render(teams = imgs))
+        num += 1
+
+
+            
 
 
 @task
