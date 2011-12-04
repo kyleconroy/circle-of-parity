@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<title>HTML Template</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+
+<style type="text/css">
+@import url(style.css );
+</style>
+
+</head>
+
+<body>
+  {% for team in teams %}
+     <br>
+     <img src = "../../{{team}}" ></img>
+     </br>
+  {% endfor %}
+
+</body>
+</html>
