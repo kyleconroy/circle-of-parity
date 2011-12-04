@@ -70,17 +70,33 @@ def scrape():
 def circles_to_html():
     local("mkdir -p data/circle_html")
     circles = json.load(open("data/circles.json"))
-    
+    #Environment is for working with the template. 
     env = Environment(loader=FileSystemLoader('data/circle_html/'))
     num = 0
     for circle in circles:
-
         imgs = []
+        team_names = []
+        game_info = []
         for game in circle["teams"]:
-            imgs.append(local("find data/logos -name '*{0}*'".format(game["winner"].lower()), capture = True))    
-        template = env.get_template('circle_template.html')
+            
+            logo_path = local("find data/logos -name '*{0}*'".format('_'.join(game["winner"].lower().split(' '))), capture = True)
+            
+            #The find might return multiple matches. This is bad. 
+            #Fixed by terrible and incorrect hack. May Linus forgive me. 
+            if len(logo_path.split('\n')) > 1:
+                logo_path = logo_path.split('\n')[0]
+
+            #Might actually not have logo, safety check
+            elif logo_path == '':
+                logo_path = 'data/circle_html/images/img_not_found.jpg'
+
+            imgs.append(logo_path)
+            team_names.append(game["winner"])
+            game_info.append("Beat {0}, Score: {1} - {2}".format(game["loser"], game["winning_score"], game["losing_score"]))
+        
+        template = env.get_template('templates/circle_template.html')
         f = open('data/circle_html/circles{0}.html'.format(num), 'w')
-        f.writelines(template.render(teams = imgs))
+        f.writelines(template.render(team_info = zip(imgs, team_names, game_info)))
         num += 1
 
 
