@@ -8,6 +8,7 @@ import urllib
 import parity
 from collections import namedtuple
 from fabric.api import task, local
+from fabric.context_managers import hide
 from lxml.etree import HTML
 from jinja2 import Template, Environment, FileSystemLoader
 
@@ -77,14 +78,16 @@ def circles_to_html():
     all_parities = []
     for circle in circles:
 
-        info_line = "Parity in {0} in {1}".format(circle["conference"], circle["year"])
-
+        info_line = "Parity in {0} in {1}".format(circle["conference"],
+                                                  circle["year"])
         imgs = []
         team_names = []
         game_info = []
         for game in circle["teams"]:
             
-            logo_path = local("find data/logos -name '*{0}*'".format('_'.join(game["winner"].lower().split(' '))), capture = True)
+            with hide('running', 'stdout', 'stderr'):
+                logo_path = local("find data/logos -name '*{0}*'".format(
+                    '_'.join(game["winner"].lower().split(' '))), capture=True)
             
             #The find might return multiple matches. This is bad. 
             #Fixed by terrible and incorrect hack. May Linus forgive me. 
@@ -97,13 +100,15 @@ def circles_to_html():
 
             imgs.append(logo_path)
             team_names.append(game["winner"])
-            game_info.append("Beat {0}, Score: {1} - {2}".format(game["loser"], game["winning_score"], game["losing_score"]))
+            game_info.append("Beat {0}, Score: {1} - {2}".format(game["loser"], 
+                             game["winning_score"], game["losing_score"]))
         
         #Write HTML page using the template. 
         #Would like this to eventually be served up in a webapp
         template = env.get_template('templates/circle_template.html')
         f = open('data/circle_html/circles{0}.html'.format(num), 'w')
-        f.writelines(template.render(team_info = zip(imgs, team_names, game_info), parity_info = info_line))
+        f.writelines(template.render(team_info = \
+            zip(imgs, team_names, game_info), parity_info = info_line))
         f.close()
         links.append('circles{0}.html'.format(num))
         all_parities.append(info_line)
@@ -159,8 +164,8 @@ def report():
     circles = json.load(open("data/circles.json"))
 
     for circle in circles:
-        line = "Parity in {0} in {1}".format(circle["conference"], circle["year"])
-
+        line = "Parity in {0} in {1}".format(circle["conference"], 
+                                             circle["year"])
         print line
         print "".join(["="] * len(line))
 
